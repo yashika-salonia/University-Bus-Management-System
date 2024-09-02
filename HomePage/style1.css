@@ -1,0 +1,193 @@
+body {
+    font-family: helvetica neue, Helvetica, noto sans, sans-serif, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #949494;
+    background-color: #fff;
+}
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.page-container .sidebar-menu {
+    position: absolute;
+    width: 280px;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #303641;
+    color: #aaabae;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page-container .sidebar-menu .logo-env {
+    width: 100%;
+    padding: 21px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.page-container .sidebar-menu #main-menu li.active >a {
+    background-color: #2b303a;
+    color: #fff;
+}
+
+.page-container .sidebar-menu #main-menu li a {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #d1d6e5;
+    z-index: 2;
+    -moz-transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    -o-transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    -webkit-transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.page-container .main-content {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    background: #f8f8ff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    color: #373e4a;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h3,
+.h3 {
+    font-size: 21px;
+}
+
+h1, h2, h3 {
+    margin-top: 17px;
+    margin-bottom: 8.5px;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #373e4a;
+}
+
+.container {
+    margin: 0;
+    position: relative;
+    top: 0px;
+    padding: 0 16px;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #f1f1f1;
+    padding: 0;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+    padding: 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    margin-left: 269px;
+    padding: 0px;
+    height: 100vh;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.content .card {
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+.content .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content .card h3 {
+    margin-bottom: 10px;
+}
+
+.content .card p {
+    margin-bottom: 10px;
+}
+
+.content .card img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.content .card .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content .card .btn:hover {
+    background-color: #45a049;
+}
+
+.content .card .btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* check this */
+element.style {
+    max-height: 117p;
+    width: 220px;
+}
+

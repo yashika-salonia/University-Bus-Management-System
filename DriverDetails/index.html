@@ -3,84 +3,490 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <header class="header">
+        <a href="" class="logo">University <span>Bus </span>Management <span>System</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
     <nav class="navbar">
-        <a href="https://erp.mmumullana.org/">
-            <img src="https://erp.mmumullana.org/uploads/logo.png?=10" style="max-height:80px;width:150px" alt="" /> </a>
-        <p id="right">Log out</p>
+        <a href="#home" class="active">Dashboard</a>
+        <!-- <a href="#about">Bus Details</a>
+        <a href="#coffees">Driver Details</a> -->
+        <!-- <a href="#reviews">Reviews</a> -->
+        <a href="#contact">Log out</a>
     </nav>
-    <div class="container">
-        <div class="content">
-            <h2 style="text-align:center;">STUDENT'S NAME Roll No. 112329 B.Tech. (Computer Science & Engineering)
-            </h2>
-            <!-- <img src="https://erp.mmumullana.org/uploads/naac.jpg?=5" alt="MDU Logo"> -->
-            <input type="search" id="search" placeholder="Search...">
-            <div id="search-results">
-                <!-- search results will be displayed here -->
-            <div class="card">
-                <h3>Driver 1</h3>
-                <h4>Mayank Sharma</h4>
-                <a href="bus1.html" class="read-more" target="_blank">Read More</a>
-            </div>
+    </header>
 
-            <div class="card">
-                <h3>Driver 2</h3>
-                <h4>Himanshu Gujral</h4>
-                <a href="bus2.html" class="read-more">Read More</a>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 1 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
 
-            <div class="card">
-                <h3>Driver 3</h3>
-                <h4>Khushpreet Singh</h4>
-                <a href="bus3.html" class="read-more">Read More</a>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 2 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
 
-            <div class="card">
-                <h3>Driver 4</h3>
-                <h4>Rajbeer Singh</h4>
-                <a href="bus4.html" class="read-more">Read More</a>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 2 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
 
-            <div class="card">
-                <h3>Driver 5</h3>
-                <h4>Suraj Kumar</h4>
-                <a href="bus5.html" class="read-more">Read More</a>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 3 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
 
-            <div class="card">
-                <h3>Driver 6</h3>
-                <h4>Rohit</h4>
-                <a href="bus6.html" class="read-more">Read More</a>
-            </div>
-            
-            <div class="card">
-                <h3>Driver 7</h3>
-                <h4>Surinder Kumar</h4>
-                <a href="bus7.html" class="read-more">Read More</a>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 4 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
 
-            <div class="card">
-                <h3>Driver  8</h3>
-                <h4>Priyansh Chaudhary</h4>
-                <a href="bus8.html" class="read-more">Read More</a>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 5 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
 
-            <div class="card">
-                <h3>Driver  9</h3>
-                <h4>Vaibhav</h4>
-                <a href="bus9.html" class="read-more">Read More</a>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 6 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
 
-            <div class="card">
-                <h3>Driver  10</h3>
-                <h4>Ravi Kumar</h4>
-                <a href="bus10.html" class="read-more">Read More</a>
-            </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 7 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
 
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 8 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 9 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Driver 10 <span>Details</span></h2>
+            <p>
+                <div class="bus-details">
+                    <div class="detail-row">
+                        <span class="label">Bus no:</span>
+                        <span class="value">HP17C-9167</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Route:</span>
+                        <span class="value">Jagadhri and Yamunanagar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Timing:</span>
+                        <span class="value">7:30-7:45 a.m.</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Name:</span>
+                        <span class="value">Mr. Harish Kumar</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Driver Id:</span>
+                        <span class="value">47B3288</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Seat Availability:</span>
+                        <span class="value">Approx. 60 seats</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="label">Stoppages:</span>
+                        <span class="value">
+                            Pyara Chowk, Fountain chowk, New market, Workshop, Kamani chowk, Sarojni colony, Gaba Palace, Madhu Chowk, Aggarsain Chowk, Hudda, Budia Chowk, Jagadhri nakka, Khundewala, Kail, Jagadhari bus stand, Gadhola, Kanhiya chowk.
+                        </span>
+                    </div>
+                </div>
+            </p>
+        </div>   
+    </section>
+
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://x.com/i/flow/login" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://in.pinterest.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
         </div>
-    </div>
+
+        <!-- <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Products</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Privacy</a>
+            </li>
+        </ul> -->
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

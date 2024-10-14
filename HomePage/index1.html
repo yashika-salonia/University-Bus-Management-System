@@ -1,154 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
+    <header class="header">
+        <a href="" class="logo">University <span>Bus </span>Management <span>System</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Dashboard</a>
+        <a href="#about">Bus Details</a>
+        <a href="#coffees">Driver Details</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    </header>
 
-    <div class="page-container ">
-        <div class="sidebar-menu">
-            <header class="logo-env">
+    <section class="home" id="home">
+        <div class="about-content">
+            <h3>Welcome to</h3>
+            <h1><span>University Bus Management System</span></h1>
+            <p>Our goal is to provide safe, reliable, and convenient transportation for students, faculty, and staff. You can plan your trip to campus with ease. View our routes and schedules, and stay updated on service disruptions."</p>
+        </div>   
+    </section>
 
-                <!-- logo -->
-                <div class="logo" >
-                    <a href="https://erp.mmumullana.org/">
-                        <img src="https://erp.mmumullana.org/uploads/logo.png?=10" style="max-height:80px;width:150px"
-                            alt="" /> </a>
-                </div>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">Bus <span>Details</span></h2>
+            <p>Read more for more details about buses. This includes, their routes, timing of arrival at stops, stoppage, it's driver etc.</p>
+            <a href="#" class="btn" id="bus-detail">Read More</a>
+        </div>   
+    </section>
 
-                <!-- logo collapse icon -->
-                <div class="sidebar-collapse" >
-                    <a href="#" class="sidebar-collapse-icon with-animation">
-                        <i class="entypo-menu"></i>
-                    </a>
-                </div>
+    <section class="coffees" id="coffees">
+        <div class="about-content">
+            <h2 class="heading">Driver <span>Details</span></h2>
+            <p>Read more for more details about bus driver. This includes, their id's, buses allocated to them, their mobile no, etc.</p>
+            <a href="#" class="btn" id="driver-detail">Read More</a>
+        </div> 
+    </section>
 
-                <!-- open/close menu icon -->
-                <div class="sidebar-mobile-menu visible-xs">
-                    <a href="#" class="with-animation">
-                        <i class="entypo-menu"></i>
-                    </a>
-                </div>
-            </header>
-
-            <div style="border-top:1px solid rgba(69, 74, 84, 0.7);"></div>
-            <ul id="main-menu" class="">
-                <li class="active ">
-                    <a href="https://erp.mmumullana.org/student/dashboard">
-                        <i class="entypo-gauge"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-
-                <li class=" ">
-                    <a href="/BusDetails/index.html" target="_blank">
-                        <i class="entypo-credit-card"></i>
-                        <span>Bus Details</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="/DriverDetails/index.html" target="_blank">
-                        <i class="entypo-credit-card"></i>
-                        <span>Driver's Details</span>
-                    </a>
-                </li>
-                <!-- subject -->
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/attendance_record">
-                        <i class="entypo-credit-card"></i>
-                        <span>Attendance Record</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/attendance_daily_punch_record">
-                        <i class="entypo-credit-card"></i>
-                        <span>Daily Punch Record</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/attendance_leave">
-                        <i class="entypo-credit-card"></i>
-                        <span>Upload Leave Application</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/exam_form">
-                        <i class="entypo-credit-card"></i>
-                        <span>Exam Form</span>
-                    </a>
-                </li>
-
-                <!-- ACCOUNT -->
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/manage_profile">
-                        <i class="entypo-lock"></i>
-                        <span>Student Profile</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/date_sheet">
-                        <i class="entypo-lock"></i>
-                        <span>Exam Date Sheet/ Notices</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/result">
-                        <i class="entypo-lock"></i>
-                        <span>Result</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/studentrequest/student_request_form/modal/ERP">
-                        <i class="entypo-lock"></i>
-                        <span>Request Form</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/hostel_form">
-                        <i class="entypo-lock"></i>
-                        <span>Apply For Hostel</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/transport_form/">
-                        <i class="entypo-lock"></i>
-                        <span>Apply For Transport</span>
-                    </a>
-                </li>
-                <li class=" ">
-                    <a href="https://erp.mmumullana.org/student/change_password">
-                        <i class="entypo-lock"></i>
-                        <span>Change Password</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="container">
-        <div class="content">
-            <h2 style="text-align:center;">STUDENT'S NAME Roll No. 112329 B.Tech. (Computer Science & Engineering)
-            </h2>
-            <img src="https://erp.mmumullana.org/uploads/naac.jpg?=5" alt="MDU Logo">
-
-            <div class="card">
-                <a href="/BusDetails/index.html">
-                <h3>Bus Details</h3>
-                </a>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
             </div>
 
-            <div class="card">
-                <a href="/DriverDetails/index.html">
-                <h3>Driver's Details</h3>
-                </a>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
             </div>
 
-        </div>
-    </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="Send message" class="btn">
+        </form>
+    </section>
 
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://x.com/i/flow/login" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://in.pinterest.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

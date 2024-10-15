@@ -130,8 +130,7 @@ section{
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 2rem;
   padding: 3rem;
-  /* padding-left: 30rem;
-  padding-right: 30rem; */
+  margin-bottom: 5rem;
 }
 .about-content h2{
   text-align: center;
@@ -145,13 +144,15 @@ section{
   margin: 2rem 0 3rem;
   max-width: 800px;
 }
-
-
 .bus-details {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
+}
+
+.navbar a i #log-out{
+  font-size: 25px;
 }
 
 .detail-row {
@@ -205,48 +206,6 @@ span.value, .label{
   margin: 2rem 0 3rem;
   max-width: 800px;
 }
-/* .reviews{
-  background-color: #2389a799;
-}
-.reviews h2{
-  margin-bottom: 10rem;
-}
-.reviews-container{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  margin-top: 8rem;
-  gap: 2rem;
-}
-.reviews-container .reviews-box{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 500px;
-  padding: 3rem 2rem 4rem;
-  border-radius: 2rem;
-  text-align: center;
-  border: 0.2rem solid #000000;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-.reviews-container .reviews-box:hover{
-  border-color:#e4b381 ;
-  transform: scale(1.02);
-  background-color: white;
-  color: black;
-}
-.reviews-box i{
-  font-size: 7rem;
-  color: #000000;
-}
-.reviews-box h3{
-  font-size: 2.6rem;
-}
-.reviews-box p{
-  font-size: 1.6rem;
-  margin: 1rem 0 3rem;
-} */
 ::-webkit-scrollbar{
   width: 15px;
 }
@@ -338,11 +297,6 @@ span.value, .label{
   html{
       font-size: 55%;
   }
-  .reviews-container{
-      padding-bottom: 7rem;
-      grid-template-columns: repeat(1,1fr);
-      margin: 0 5rem;
-  }
 }
 @media(max-width:991px){
   header{
@@ -397,35 +351,58 @@ span.value, .label{
   .coffees h2{
       margin-bottom: 3rem;
   }
-  .reviews h2{
-      margin-bottom: 3rem;
-  }
   .coffees-container{
       grid-template-columns: repeat(1,1fr);
   }
-  .reviews-container{
-      grid-template-columns: repeat(2,1fr);
-  }
 }
 
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f5a623; /* example background color */
-}
-
+/* Style for the search bar */
 #search-form {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 #bus-search {
-  padding: 5px;
-  margin-right: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ffae00; /* You can adjust the color */
+  border-radius: 50px; /* Makes it more rounded */
+  outline: none;
+  width: 250px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
 }
 
-button {
-  padding: 5px 10px;
+#bus-search:focus {
+  width: 260px; /* Increases the width on focus */
+  border-color: #ffa500;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on focus */
+}
+
+#search-form button {
+  background-color: #ffae00;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
   cursor: pointer;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#search-form button:hover {
+  background-color: #e59400; /* Darker on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
+}
+
+/* Optional: Add an icon inside the search input */
+#search-form::before {
+  position: absolute;
+  left: 10px;
+  color: #ffae00;
+  font-size: 16px;
 }

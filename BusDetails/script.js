@@ -1,6 +1,6 @@
 // Prevent back navigation after logout
 window.history.pushState(null, "", window.location.href); // Push the current page to history
-window.onpopstate = function() {
+window.onpopstate = function () {
     window.history.pushState(null, "", window.location.href); // Push it again to prevent going back
 };
 
@@ -36,7 +36,7 @@ const buses = [
         driverName: "Mr.Ankush Pal",
         driverId: "47B3290",
         seatAvailability: "Approx. 60 seats",
-        stoppages: "KD, Civil, Janta Sweets, Defence Colony, Indian Roller, Khudda, Saha,Manav chowk,Jandli,Mithapur,Baldev nagar,Aggarsain chowk,Polytechnic chowk,Nanda,Delux."
+        stoppages: "KD, Civil, Janta Sweets, Defence Colony, Indian Roller, Khudda, Saha,Manav chowk,Jandli,Mithapur,Baldev nagar, Aggarsain chowk, Polytechnic chowk, Nanda,Delux."
     },
     {
         busNo: "HR54F-8684",
@@ -45,7 +45,7 @@ const buses = [
         driverName: "Mr.Himanshu",
         driverId: "47B3291",
         seatAvailability: "Approx. 60 seats",
-        stoppages: "Adhoya,Sohana,Kalas,Boh,Babain,Mughalwali,Bharon Majra,Sadhora,Rampur Seori,Kalesar,Basauli,Shahzadpur,Naraingarh."
+        stoppages: "Adhoya, Sohana, Kalas, Boh, Babain, Mughalwali, Bharon Majra, Sadhora, Rampur Seori, Kalesar, Basauli, Shahzadpur, Naraingarh."
     },
     {
         busNo: "HR36B-9078",
@@ -54,12 +54,57 @@ const buses = [
         driverName: "Mr.Lalit Kumar",
         driverId: "47B3292",
         seatAvailability: "Approx. 60 seats",
-        stoppages: "Babain,sanghor,sunarion,Guhan,Kandoli,Behlolpur Bus stand,BAlad Village,Ladwapeer,Bakali,Guda,Chappra,Gangori,Bartoli,Mahuwakheri,Ladwa indri chowk,Parhladpur."
+        stoppages: "Babain, sanghor, sunarion, Guhan, Kandoli, Behlolpur Bus stand, Balad Village, Ladwapeer, Bakali, Guda, Chappra, Gangori, Bartoli, Mahuwakheri, Ladwa indri chowk, Parhladpur."
     },
+    {
+        busNo: "HR01-8000",
+        route: "Indri",
+        timing: " 6:55 a.m.",
+        driverName: "Mr.Rajbeer Singh",
+        driverId: "47B3293",
+        seatAvailability: "Approx. 60 seats",
+        stoppages: "Indri bus Stand, Khanpur, Indri Mandi, Badano Badani, Ladwa hari mandir, Ladwa chowk, Ban, Gadshyami, Radaur Bubka chowk, Radauri, Chamrori, Naggal, Kheri Lakha singh, Hartan Majri, Sikandra, Bhogpur, Huddion, Alwalpur."
+    },
+    {
+        busNo: "HR76-3208",
+        route: "Karnal",
+        timing: " 6:30 a.m.",
+        driverName: "Mr.Suraj Kumar",
+        driverId: "47B3294",
+        seatAvailability: "Approx. 60 seats",
+        stoppages: "Tau devi lal chowk,Sector-6,Sector-12,Petrol pump,Nirmal Kutia,Jhanjheri,Taroari,Nilokheri,ItI chowk,Samana Bahu,Raipur."
+    },
+    {
+        busNo: "HR76B-1045",
+        route: "Kurukshetra",
+        timing: " 6:45 a.m.",
+        driverName: "Mr.Rohit",
+        driverId: "47B3295",
+        seatAvailability: "Approx. 60 seats",
+        stoppages: "Pipli, 3rd Gate kuk, Civil hospital, Birla mandir, Old bus stand, Sobti Nursing Home, Mohan nagar,Sec-07, New bus stand, dhantori, Rattanagar, Jyotisar, Sindhi sweets, Mini Zoo,Sec-07 gym khana,Sobti, Jindal chowk, Sec-02,khanpur, Dhundla, Kirmach, Nit, Bharam Sarover, Kanda chowk, Mohan nagar, Umri chowk."
+    },
+    {
+        busNo: "HR33-6589",
+        route: "Chhachhrauli",
+        timing: " 7:15 a.m.",
+        driverName: "Mr.Priyansh Choudhary",
+        driverId: "47B3296",
+        seatAvailability: "Approx. 60 seats",
+        stoppages: "Chhachhrauli Bus stand, Panjeto, Manakpur, Bilaspur chowk, Khera, Bhambholi, Thana Chappar, Khera, Gadhola"
+    },
+    {
+        busNo: "HR03-4653",
+        route: " Barwala,Moli,Kot",
+        timing: " 7:10 a.m.",
+        driverName: "Mr.Ravi Kumar ",
+        driverId: "47B3297",
+        seatAvailability: "Approx. 60 seats",
+        stoppages: "Barwala, Moli, Kot, Kakker Majra, Bagwali"
+    }
 ];
 
 function renderBuses() {
-    i=0;
+    i = 0;
     const busList = document.getElementById("bus-list");
     busList.innerHTML = buses.map(bus => `
         <div class="about-content">

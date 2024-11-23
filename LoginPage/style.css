@@ -101,3 +101,12 @@ h1 {
 .form-group{
     display: contents;
 }
+
+.error-message {
+    color: #ef0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    margin-bottom: 6px;
+}

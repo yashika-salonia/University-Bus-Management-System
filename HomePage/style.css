@@ -169,48 +169,6 @@ section{
     margin: 2rem 0 3rem;
     max-width: 800px;
 }
-/* .reviews{
-    background-color: #2389a799;
-}
-.reviews h2{
-    margin-bottom: 10rem;
-}
-.reviews-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-top: 8rem;
-    gap: 2rem;
-}
-.reviews-container .reviews-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 500px;
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: 0.2rem solid #000000;
-    cursor: pointer;
-    transition: 0.4s ease;
-}
-.reviews-container .reviews-box:hover{
-    border-color:#e4b381 ;
-    transform: scale(1.02);
-    background-color: white;
-    color: black;
-}
-.reviews-box i{
-    font-size: 7rem;
-    color: #000000;
-}
-.reviews-box h3{
-    font-size: 2.6rem;
-}
-.reviews-box p{
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-} */
 ::-webkit-scrollbar{
     width: 15px;
 }
@@ -221,48 +179,22 @@ section{
     background-color: white;
     width: 50px;
 }
-.contact{
-    background-color: #080808;
-}
-.contact h2{
-    margin-bottom: 3rem;
-}
-.contact form{
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    flex-wrap: wrap;
-}
-.contact form .input-box input, .contact form textarea{
-    padding: 1.5rem;
-    width: 100%;
-    font-size: 1.6rem;
-    color: white;
-    background:#080808;
-    border-radius: 5px;
-    border: 2px solid #ff9100;
-    margin: 1rem 0;
-    resize: none;
-}
-.contact form .btn{
-    margin-top: 2rem;
-}
 .footer{
     position: relative;
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: #ff9100;
+    background-color: #000000;
 }
 .footer .social{
     text-align: center;
     padding-bottom: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .footer .social a{
     font-size: 25px;
-    color: white;
-    border: 2px solid white;
+    color: #000000;
+    border: 2px solid rgb(0, 0, 0);
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -275,7 +207,7 @@ section{
 .footer .social a:hover{
     transform: scale(1.2)translateY(-10px);
     background-color: white;
-    color: #ff9100;
+    color: #000000;
 }
 .footer ul{
     margin-top: 0;

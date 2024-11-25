@@ -247,16 +247,16 @@ span.value, .label{
   bottom: 0;
   width: 100%;
   padding: 40px 0;
-  background-color: #ff9100;
+  background-color: #000000;
 }
 .footer .social{
   text-align: center;
   padding-bottom: 25px;
-  color: #ff9100;
+  color:#ff9100;
 }
 .footer .social a{
   font-size: 25px;
-  color:#ff9100;
+  color: #ff9100;
   border: 2px solid #ff9100;
   width: 42px;
   height: 42px;
@@ -270,7 +270,7 @@ span.value, .label{
 .footer .social a:hover{
   transform: scale(1.2)translateY(-10px);
   background-color: #ff9100;
-  color: #ff9100;
+  color: #000000;
 }
 .footer ul{
   margin-top: 0;

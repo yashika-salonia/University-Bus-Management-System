@@ -1,4 +1,3 @@
-// Add this at the start of your script.js or in a <script> tag
 document.addEventListener('DOMContentLoaded', function() {
     fetch('../LoginPage/check_session.php')
         .then(response => response.json())
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
-// Add logout function
+// Logout function
 function handleLogout() {
     fetch('../LoginPage/logout.php')
         .then(response => response.json())
@@ -25,12 +24,13 @@ function handleLogout() {
         .catch(error => console.error('Error:', error));
 }
 
-
+// Menu and navigation functionality
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
 
+// Scroll active link highlighting
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -47,13 +47,8 @@ window.onscroll = () => {
     });
 };
 
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
-
-// Remove direct event listeners as we've updated href in HTML
-function handleLogout() {
-    // Add any logout logic if needed
-    window.location.href = '../LoginPage/index.html';
-}
+// Optional: Mobile menu toggle (uncomment if needed)
+// menuIcon.onclick = () => {
+//     menuIcon.classList.toggle('bx-x');
+//     navbar.classList.toggle('active');
+// };

@@ -37,6 +37,8 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const form = document.getElementById('login-form');
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
             const errorMessage = document.querySelector('.error-message');
 
             form.addEventListener('submit', function (e) {
@@ -44,18 +46,19 @@
 
                 const formData = new FormData(this);
 
-                fetch('../LoginPage/login.php', {  // Relative path
+                fetch('../LoginPage/login.php', {
                     method: 'POST',
                     body: formData
                 })
                     .then(response => response.json())
                     .then(data => {
-                        console.log('Server response:', data); // Add this line for debugging
+                        console.log('Server response:', data);
                         if (data.success) {
-                            // Use the correct relative path
+                            // Redirect the user to the desired page
                             window.location.href = '../HomePage/index1.html';
-                            // Or use absolute path
-                            // window.location.href = '/bus_management_system/HomePage/index1.html';
+
+                            // Reset the form
+                            form.reset();
                         }
                         else {
                             errorMessage.textContent = data.message || 'Invalid login details';

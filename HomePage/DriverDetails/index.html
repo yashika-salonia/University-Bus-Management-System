@@ -38,7 +38,6 @@
             <a href="https://in.pinterest.com/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         </div>
     </footer>
-    <script src="logout.js"></script>
     <script>
 
         const drivers = [
@@ -156,7 +155,7 @@
             if (filteredDrivers.length > 0) {
                 driverList.innerHTML = filteredDrivers.map(driver => `
             <div class="about-content">
-                <h2 class="heading">Driver ${++i} <span>Details</span></h2>
+                <h2 class="heading">Driver <span>Details</span></h2>
                 <div class="driver-details">
                     <div class="detail-row"><span class="label">Driver Name:</span><span class="value">${driver.driverName}</span></div>
                     <div class="detail-row"><span class="label">Driver Id:</span><span class="value">${driver.driverId}</span></div>

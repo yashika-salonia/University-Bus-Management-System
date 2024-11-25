@@ -141,34 +141,6 @@ section{
     margin: 2rem 0 3rem;
     max-width: 800px;
 }
-.coffees{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background:url(orangebg.avif) center no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-}
-.coffees-content{
-    text-align: center;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid rgba(24, 24, 24, 0.3);
-    border-radius: 2rem;
-    padding: 5rem;
-}
-.coffees-content h2{
-    text-align: center;
-    line-height: 1.5;
-}
-.coffees-content h3{
-    font-size: 2.6rem;
-}
-.coffees-content p{
-    font-size: 2rem;
-    margin: 2rem 0 3rem;
-    max-width: 800px;
-}
 ::-webkit-scrollbar{
     width: 15px;
 }
@@ -189,12 +161,12 @@ section{
 .footer .social{
     text-align: center;
     padding-bottom: 25px;
-    color: rgb(0, 0, 0);
+    color:#ff9100;
 }
 .footer .social a{
     font-size: 25px;
-    color: #000000;
-    border: 2px solid rgb(0, 0, 0);
+    color: #ff9100;
+    border: 2px solid #ff9100;
     width: 42px;
     height: 42px;
     line-height: 42px;
@@ -206,7 +178,7 @@ section{
 }
 .footer .social a:hover{
     transform: scale(1.2)translateY(-10px);
-    background-color: white;
+    background-color: #ff9100;
     color: #000000;
 }
 .footer ul{
@@ -247,7 +219,7 @@ section{
     section{
         padding:10rem 3% 2rem;
     }
-    .coffees{
+    .about{
         padding-bottom: 7rem;
     }
     .footer{
@@ -284,21 +256,12 @@ section{
     }
     .home-content h1{
         font-size: 8rem;
-        color: #e4b381;
+        color: #ff9100;
     }
     .about-content{
         margin: 1rem 4rem;
     }
-    .coffees h2{
+    .about h2{
         margin-bottom: 3rem;
-    }
-    .reviews h2{
-        margin-bottom: 3rem;
-    }
-    .coffees-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .reviews-container{
-        grid-template-columns: repeat(2,1fr);
     }
 }

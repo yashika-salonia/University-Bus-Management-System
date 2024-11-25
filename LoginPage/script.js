@@ -4,7 +4,7 @@ fetch('login.php', {
 })
 .then(response => response.json())
 .then(data => {
-    console.log('Server response:', data); // Add this line for debugging
+    console.log('Server response:', data);
     if (data.success) {
         window.location.href = '/HomePage/index1.html';
     } else {

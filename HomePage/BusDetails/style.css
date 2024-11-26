@@ -178,34 +178,6 @@ span.value, .label{
   font-size: 2rem;
 }
 
-.coffees{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background:url(orangebg.avif) center no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-}
-.coffees-content{
-  text-align: center;
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(24, 24, 24, 0.3);
-  border-radius: 2rem;
-  padding: 5rem;
-}
-.coffees-content h2{
-  text-align: center;
-  line-height: 1.5;
-}
-.coffees-content h3{
-  font-size: 2.6rem;
-}
-.coffees-content p{
-  font-size: 2rem;
-  margin: 2rem 0 3rem;
-  max-width: 800px;
-}
 ::-webkit-scrollbar{
   width: 15px;
 }
@@ -348,15 +320,8 @@ span.value, .label{
       margin: 1rem 4rem;
       margin: 7rem 4rem;
   }
-  .coffees h2{
-      margin-bottom: 3rem;
-  }
-  .coffees-container{
-      grid-template-columns: repeat(1,1fr);
-  }
 }
 
-/* Style for the search bar */
 #search-form {
   display: flex;
   justify-content: center;
@@ -367,19 +332,19 @@ span.value, .label{
 #bus-search {
   padding: 10px 15px;
   font-size: 16px;
-  border: 2px solid #ffae00; /* You can adjust the color */
-  border-radius: 50px; /* Makes it more rounded */
+  border: 2px solid #ffae00; 
+  border-radius: 50px; 
   outline: none;
   width: 250px;
   transition: all 0.3s ease;
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 #bus-search:focus {
-  width: 260px; /* Increases the width on focus */
+  width: 260px; 
   border-color: #ffa500;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on focus */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
 }
 
 #search-form button {
@@ -395,11 +360,10 @@ span.value, .label{
 }
 
 #search-form button:hover {
-  background-color: #e59400; /* Darker on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
+  background-color: #e59400; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
 }
 
-/* Optional: Add an icon inside the search input */
 #search-form::before {
   position: absolute;
   left: 10px;

@@ -1,57 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8"> <!-- Set the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Make the website responsive -->
+    <title>Home page</title> <!-- Title of the webpage displayed in the browser tab -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS stylesheet for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Link to Boxicons for icon fonts -->
 </head>
 <body>
-    <header class="header">
-        <a href="" class="logo">University <span>Bus </span>Management <span>System</span></a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Dashboard</a>
-            <a href="#bus-details">Bus Details</a>
-            <a href="#driver-details">Driver Details</a>
-            <a href="../LoginPage/index.html" onclick="handleLogout()">Log out <i id="log-out" class='bx bx-log-out'></i> </a>
+    <header class="header"> <!-- Header section containing the logo and navigation -->
+        <a href="" class="logo">University <span>Bus </span>Management <span>System</span></a> <!-- Logo of the website -->
+        <i class='bx bx-menu' id="menu-icon"></i> <!-- Icon for the menu (hamburger icon) -->
+        <nav class="navbar"> <!-- Navigation bar -->
+            <a href="#home" class="active">Dashboard</a> <!-- Link to the home section -->
+            <a href="#bus-details">Bus Details</a> <!-- Link to the bus details section -->
+            <a href="#driver-details">Driver Details</a> <!-- Link to the driver details section -->
+            <a href="../LoginPage/index.html" onclick="handleLogout()">Log out <i id="log-out" class='bx bx-log-out'></i> </a> <!-- Link to log out, with an icon -->
         </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="about-content">
-            <h3>Welcome to</h3>
-            <h1><span>University Bus Management System</span></h1>
-            <p>Our goal is to provide safe, reliable, and convenient transportation for students, faculty, and staff. You can plan your trip to campus with ease. View our routes and schedules, and stay updated on service disruptions."</p>
+    <section class="home" id="home"> <!-- Home section -->
+        <div class="about-content"> <!-- Container for content -->
+            <h3>Welcome to</h3> <!-- Welcome message -->
+            <h1><span>University Bus Management System</span></h1> <!-- Main heading -->
+            <p>Our goal is to provide safe, reliable, and convenient transportation for students, faculty, and staff. You can plan your trip to campus with ease. View our routes and schedules, and stay updated on service disruptions."</p> <!-- Description of the system -->
         </div>
     </section>
 
-    <section class="about" id="bus-details">
-        <div class="about-content">
-            <h2 class="heading">Bus <span>Details</span></h2>
-            <p>Read more for more details about buses. This includes their routes, timing of arrival at stops, stoppage, its driver etc.</p>
-            <a href="./BusDetails/index.html" class="btn" id="bus-detail">Read More</a>
+    <section class="about" id="bus-details"> <!-- Section for bus details -->
+        <div class="about-content"> <!-- Container for content -->
+            <h2 class="heading">Bus <span>Details</span></h2> <!-- Subheading for bus details -->
+            <p>Read more for more details about buses. This includes their routes, timing of arrival at stops, stoppage, its driver etc.</p> <!-- Description of bus details -->
+            <a href="./BusDetails/index.html" class="btn" id="bus-detail">Read More</a> <!-- Link to the bus details page -->
         </div>
     </section>
 
-    <section class="about" id="driver-details">
-        <div class="about-content">
-            <h2 class="heading">Driver <span>Details</span></h2>
-            <p>Read more for more details about bus drivers. This includes their IDs, buses allocated to them, their mobile numbers, etc.</p>
-            <a href="./DriverDetails/index.html" class="btn" id="driver-detail">Read More</a>
+    <section class="about" id="driver-details"> <!-- Section for driver details -->
+        <div class="about-content"> <!-- Container for content -->
+            <h2 class="heading">Driver <span>Details</span></h2> <!-- Subheading for driver details -->
+            <p>Read more for more details about bus drivers. This includes their IDs, buses allocated to them, their mobile numbers, etc.</p> <!-- Description of driver details -->
+            <a href="./DriverDetails/index.html" class="btn" id="driver-detail">Read More</a> <!-- Link to the driver details page -->
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="social">
-            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="https://x.com/i/flow/login" target="_blank"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://in.pinterest.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+    <footer class="footer"> <!-- Footer section -->
+        <div class="social"> <!-- Container for social media links -->
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram-alt'></i></a> <!-- Instagram link -->
+            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a> <!-- Facebook link -->
+            <a href="https://x.com/i/flow/login" target="_blank"><i class='bx bxl-twitter' ></i></a> <!-- Twitter link -->
+            <a href="https://in.pinterest.com/" target="_blank"><i class='bx bxl-linkedin' ></i></a> <!-- LinkedIn link -->
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <script src="script.js"></script> <!-- Link to the external JavaScript

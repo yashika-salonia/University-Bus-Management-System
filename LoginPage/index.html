@@ -2,73 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+    <title>Login Page</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS stylesheet -->
 </head>
 
 <body>
-    <section class="about" id="about">
-        <div class="about-content">
-            <div class="login-form">
+    <section class="about" id="about"> <!-- Section for the about content -->
+        <div class="about-content"> <!-- Container for the content -->
+            <div class="login-form"> <!-- Container for the login form -->
                 <img src="https://www.mmumullana.org/wp-content/uploads/elementor/thumbs/mmdu-logo-inner-phu2q5qubti829yj7htre4c1j2ybchwscv7px07shs.png"
-                    class="img-logo">
-                <div class="error-message" style="color: red;"></div>
-                <form id="login-form" method="post">
-                    <select name="role_id" class="form-control mt-3" id="role_id" required>
-                        <option value="">Select Role</option>
-                        <option value="2">Teacher</option>
-                        <option value="3">Student</option>
+                    class="img-logo"> <!-- Logo image -->
+                <div class="error-message" style="color: red;"></div> <!-- Div to display error messages -->
+                <form id="login-form" method="post"> <!-- Login form with POST method, POST method is secure way to send sensitive data like passwords as it send it to database without including it in the url-->
+                    <select name="role_id" class="form-control mt-3" id="role_id" required> <!-- Dropdown to select user role -->
+                        <option value="">Select Role</option> <!-- Default option -->
+                        <option value="2">Teacher</option> <!-- Option for Teacher role -->
+                        <option value="3">Student</option> <!-- Option for Student role -->
                     </select>
-                    <div class="form-group">
+                    <div class="form-group"> <!-- Container for email input -->
                         <input type="text" class="form-control" name="email" id="email"
-                            placeholder="User Name / Roll No / Admission No" required />
+                            placeholder="User  Name / Roll No / Admission No" required /> <!-- Input for username or ID -->
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"> <!-- Container for password input -->
                         <input type="password" class="form-control" name="password" id="password" placeholder="Password"
-                            required />
+                            required /> <!-- Input for password -->
                     </div>
-                    <button type="submit" style="background-color: #ff0000;">Login</button>
+                    <button type="submit" style="background-color: #ff0000;">Login</button> <!-- Submit button for the form -->
                 </form>
             </div>
         </div>
     </section>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const form = document.getElementById('login-form');
-            const emailInput = document.getElementById('email');
-            const passwordInput = document.getElementById('password');
-            const errorMessage = document.querySelector('.error-message');
+        document.addEventListener('DOMContentLoaded', function () { // Event listener for when the DOM is fully loaded
+            const form = document.getElementById('login-form'); // Get the login form element
+            const emailInput = document.getElementById('email'); // Get the email input element
+            const passwordInput = document.getElementById('password'); // Get the password input element
+            const errorMessage = document.querySelector('.error-message'); // Get the error message display element
 
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
+            form.addEventListener('submit', function (e) { // Event listener for form submission
+                e.preventDefault(); // Prevent the default form submission behavior
 
-                const formData = new FormData(this);
+                const formData = new FormData(this); // Create a FormData object from the form
 
-                fetch('../LoginPage/login.php', {
-                    method: 'POST',
-                    body: formData
+                fetch('../LoginPage/login.php', { // Send a POST request to the server
+                    method: 'POST', // Specify the method as POST
+                    body: formData // Attach the form data to the request
                 })
-                    .then(response => response.json())
+                    .then(response => response.json()) // Parse the JSON (javascript object notation) response from the server
                     .then(data => {
-                        console.log('Server response:', data);
-                        if (data.success) {
+                        console.log('Server response:', data); // Log the server response to the console
+                        if (data.success) { // Check if the login was successful
                             // Redirect the user to the desired page
-                            window.location.href = '../HomePage/index1.html';
+                            window.location.href = '../HomePage/index1.html'; // Redirect to homepage
 
                             // Reset the form
-                            form.reset();
+                            form.reset(); // Clear the form fields
                         }
                         else {
-                            errorMessage.textContent = data.message || 'Invalid login details';
-                            errorMessage.style.display = 'block';
+                            errorMessage.textContent = data.message || 'Invalid login details'; // Display error message
+                            errorMessage.style.display = 'block'; // Make the error message visible
                         }
                     })
-                    .catch(error => {
-                        errorMessage.textContent = 'An error occurred. Please try again.';
-                        errorMessage.style.display = 'block';
-                        console.error('Error:', error);
+                    .catch(error => { // Handle any errors that occur during the fetch
+                        errorMessage.textContent = 'An error occurred. Please try again.'; // Display a generic error message
+                        errorMessage.style.display = 'block'; // Make the error message visible
+                        console.error('Error:', error); // Log the error to the console
                     });
             });
         });
